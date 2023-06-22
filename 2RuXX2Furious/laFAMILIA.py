@@ -28,7 +28,7 @@ background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load('coche.png').convert_alpha()
+        self.image = pygame.image.load('coche1.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.centerx = WIDTH // 2
         self.rect.bottom = HEIGHT - 10
@@ -65,7 +65,7 @@ pygame.display.set_caption("RuXx & Furious")
 class Vehicle(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load('coche2.png').convert_alpha()
+        self.image = pygame.image.load('enem1.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.x = random.randrange(WIDTH - self.rect.width)
         self.rect.y = random.randrange(-100, -40)
